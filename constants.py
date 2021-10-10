@@ -17,3 +17,9 @@ DO_ATTACK_SELECTION = "selected_attack"
 # Attack categories
 PHYSICAL = "physical"
 SPECIAL = "special"
+NATURES = {
+    "Hardy",
+    "Lonely",
+    "Brave",
+    "Adamant"
+}

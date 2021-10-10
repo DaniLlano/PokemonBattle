@@ -42,6 +42,7 @@ class Battle:
         print(self.pokemon2.name + " has " + str(self.pokemon2.current_hp) + " left!")
 
 class Pokemon:
+    
     def __init__(self, name, level, type1, type2):
         self.type2 = type2
         self.type1 = type1
