@@ -72,3 +72,17 @@ class GUI:
             game.screen.blit(text_surface, (110, 90))
 
             game.screen.blit(self.rendererEnemy, (20,50))
+
+        if self.rendererPlayer:
+            text_surface = self.font.render(game.pokemon1.name, False, (0,0,0))
+            game.screen.blit(text_surface, (330, 278))
+
+            text_surface = self.font.render("Lv: " + str(game.pokemon1.name), False, (0,0,0))
+            game.screen.blit(text_surface, (530, 278))
+
+            text_surface = self.font.render(str(int(game.pokemon1.current_hp)) + "/" + str(int(total_player_hp), False, (0,0,0)))
+            game.screen.blit(text_surface, (420,330))
+
+            game.screen.blit(self.rendererPlayer, (300, 290))
+
+        self.renderMessage(game, "")
