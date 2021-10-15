@@ -16,6 +16,10 @@ class Pokemon:
         self.current_hp = 0
         self.nature = 0
 
+    def render(self, screen, position):
+        if self.renderer:
+            screen.blit(self.renderer, position)
+
     def compute_stats(self):
         self.stats = {
             HP: self.compute_hp_stat(),
